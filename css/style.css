@@ -217,7 +217,7 @@ height: 24px;
   margin-bottom: 35px;
   padding: 50px 80px;
   color: #000000;
-  background: url("https://pencode.ru/img/column-delimiter.png") center no-repeat, #f8f5f2 url("../img/texture-main");
+  background: url("https://pencode.ru/img/column-delimiter.png") center no-repeat, #f8f5f2 url("../img/pattern-light.jpg");
 }
 
 .index-content p {
@@ -489,7 +489,7 @@ margin-right: 0;
   padding: 50px 80px;
   color: #000000;
   display: none;
-  background: #f8f3f0 url("https://pencode.ru/pattern-light.jpg");
+  background: #f8f3f0 url("https://pencode.ru/img/pattern-light.jpg");
 }
 
 .modal-content-close {
