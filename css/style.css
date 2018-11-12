@@ -58,7 +58,7 @@ figure {
 
 .main-navigation .active {
   position: relative;
-  background-color: none;
+  background-color: #ffffff;
 }
 
 .main-navigation .active::after {
@@ -1072,7 +1072,7 @@ text-align: center
   float: right;
   font-size: 0;
   margin-top: 55px;
-  min-heignt: 615px;
+  min-height: 615px;
 }
 
 .sellers-column {
