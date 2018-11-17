@@ -2,6 +2,7 @@
 
 body {
   padding: 3px;
+
 }
 
 body > *,
@@ -10,6 +11,7 @@ body > * > * > *,
 body > * > * > * > *,
 body > * > * > * > * > * {
   position: relative;
+  text-transform: none;
 }
 
 body > *::before {
@@ -92,11 +94,11 @@ body > * > * > * > * > *::before {
 }
 
 .main-header::before {
-  content: ".Main-header";
+  content: ".main-header";
 }
 
 .container::before {
-  content: ".Container";
+  content: ".container";
 }
 
 .main-header .container::before {
@@ -109,48 +111,48 @@ body > * > * > * > * > *::before {
 }
 
 .main-navigation-wrapper::before {
-
+  content: ".main-navigation-wrapper";
 }
 
 .site-navigation::before {
-  content: ".Site-navigation";
+  content: ".site-navigation";
 }
 
 .user-navigation::before {
-  content: ".User-navigation";
+  content: ".user-navigation";
 }
 
 .main-header-logo::before {
-  content: ".Main-header-logo";
+  content: ".main-header-logo";
 }
 
 .features-list::before {
-  content: ".Features-list";
+  content: ".features-list";
   top: -28px;
 }
 
 .feature-item::before {
-  content: ".Feature-item";
+  content: ".feature-item";
 }
 
 .index-columns::before {
-  content: ".Index-columns";
+  content: ".index-columns";
 }
 
 .news::before {
-  content: ".News";
+  content: ".news";
   left: auto;
   right: 0;
 }
 
 .gallery::before {
-  content: ".Gallery";
+  content: ".gallery";
   left: auto;
   right: 0;
 }
 
 .main-footer::before {
-  content: ".Main-footer";
+  content: ".main-footer";
 }
 
 .main-footer .container::before {
@@ -158,13 +160,56 @@ body > * > * > * > * > *::before {
 }
 
 .footer-contacts::before {
-  content: ".Footer-contacts";
+  content: ".footer-contacts";
 }
 
 .footer-social::before {
-  content: ".Footer-social";
+  content: ".footer-social";
 }
 
 .footer-copyright::before {
-  content: ".Footer-copyright";
+  content: ".footer-copyright";
 }
+
+.page-title::before {
+  content: ".page-title";
+}
+
+.breadcrumbs::before {
+  content: ".breadcrumbs";
+}
+
+.filters::before {
+  content: ".filters";
+}
+
+.catalog::before {
+  content: ".catalog";
+}
+
+.catalog-columns::before {
+  content: ".catalog-columns";
+}
+
+.catalog-list::before {
+  content: ".catalog-list";
+}
+
+.catalog-item::before {
+  content: ".catalog-item";
+}
+
+.pagination-list::before {
+  content: ".pagination-list";
+}
+
+.product-photos::before {
+  content: ".product-photos";
+}
+
+.product-info::before {
+  content: ".product-info";
+}
+
+
+
