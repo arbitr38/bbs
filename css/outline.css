@@ -1,6 +1,4 @@
-/*======================================
- Системное оформление - не изменять
-=======================================*/
+/*TEMP OUTLINE STYLES FOR INDEX.HTML */
 
 body {
   padding: 3px;
@@ -8,14 +6,10 @@ body {
 
 body > *,
 body > * > *,
-body > * > * > * {
+body > * > * > *,
+body > * > * > * > *,
+body > * > * > * > * > * {
   position: relative;
-}
-
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-  display: none;
 }
 
 body > *::before {
@@ -29,6 +23,16 @@ body > * > *::before {
 }
 
 body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * > * > * > * > *::before {
   top: 0;
   left: 0;
 }
@@ -67,12 +71,32 @@ body > * > * > *::before {
   background: rgb(234, 255, 45);
 }
 
+body > * > * > * > * {
+  background: rgba(32, 16, 176, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(32, 16, 176);
+
+}
+
+body > * > * > * > *::before {
+  color: white;
+  background: rgb(32, 16, 176);
+}
+
+body > * > * > * > * > * {
+    background: rgba(164, 14, 201, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(194, 14, 201);
+}
+body > * > * > * > * > *::before {
+    color: white;
+  background: rgb(164, 14, 201);
+}
+
 .main-header::before {
-  content: ".main-header";
+  content: ".Main-header";
 }
 
 .container::before {
-  content: ".container";
+  content: ".Container";
 }
 
 .main-header .container::before {
@@ -81,44 +105,52 @@ body > * > * > *::before {
 }
 
 .main-navigation::before {
-  content: ".main-navigation";
+
 }
 
-.user-block::before {
-  content: ".user-block";
+.main-navigation-wrapper::before {
+
 }
 
-.index-logo::before {
-  content: ".index-logo";
+.site-navigation::before {
+  content: ".Site-navigation";
 }
 
-.features::before {
-  content: ".features";
+.user-navigation::before {
+  content: ".User-navigation";
+}
+
+.main-header-logo::before {
+  content: ".Main-header-logo";
+}
+
+.features-list::before {
+  content: ".Features-list";
   top: -28px;
 }
 
-.features-item::before {
-  content: ".features-item";
+.feature-item::before {
+  content: ".Feature-item";
 }
 
-.index-content::before {
-  content: ".index-content";
+.index-columns::before {
+  content: ".Index-columns";
 }
 
-.index-content-left::before {
-  content: ".index-content-left";
+.news::before {
+  content: ".News";
   left: auto;
   right: 0;
 }
 
-.index-content-right::before {
-  content: ".index-content-right";
+.gallery::before {
+  content: ".Gallery";
   left: auto;
   right: 0;
 }
 
 .main-footer::before {
-  content: ".main-footer";
+  content: ".Main-footer";
 }
 
 .main-footer .container::before {
@@ -126,13 +158,13 @@ body > * > * > *::before {
 }
 
 .footer-contacts::before {
-  content: ".footer-contacts";
+  content: ".Footer-contacts";
 }
 
 .footer-social::before {
-  content: ".footer-social";
+  content: ".Footer-social";
 }
 
 .footer-copyright::before {
-  content: ".footer-copyright";
+  content: ".Footer-copyright";
 }
