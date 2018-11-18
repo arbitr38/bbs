@@ -107,7 +107,7 @@ body > * > * > * > * > *::before {
 }
 
 .main-navigation::before {
-  content: ".main-navigation";
+
 }
 
 .main-navigation-wrapper::before {
