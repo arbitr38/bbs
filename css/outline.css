@@ -1,4 +1,4 @@
-/*TEMP OUTLINE STYLES FOR INDEX.HTML */
+/*TEMP OUTLINE STYLES FOR BARBER */
 
 body {
   padding: 3px;
@@ -15,8 +15,9 @@ body > * > * > * > * > * {
 }
 
 body > *::before {
-  top: -3px;
-  left: -3px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 body > * > *::before {
@@ -30,8 +31,10 @@ body > * > * > *::before {
 }
 
 body > * > * > * > *::before {
-  top: 0;
-  left: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+
 }
 
 body > * > * > * > * > *::before {
@@ -86,7 +89,7 @@ body > * > * > * > *::before {
 
 body > * > * > * > * > * {
     background: rgba(164, 14, 201, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(194, 14, 201);
+  box-shadow: inset 0 0 0 2px rgb(164, 14, 201);
 }
 body > * > * > * > * > *::before {
     color: white;
@@ -101,10 +104,6 @@ body > * > * > * > * > *::before {
   content: ".container";
 }
 
-.main-header .container::before {
-  top: auto;
-  bottom: -28px;
-}
 
 .main-navigation::before {
 
@@ -210,6 +209,4 @@ body > * > * > * > * > *::before {
 .product-info::before {
   content: ".product-info";
 }
-
-
 
