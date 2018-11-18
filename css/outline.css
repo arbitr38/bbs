@@ -14,36 +14,6 @@ body > * > * > * > * > * {
   text-transform: none;
 }
 
-body > *::before {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-
-body > * > *::before {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-
-body > * > * > *::before {
-  position: absolute;
-  top: 0;
-  left: 0px;
-}
-
-body > * > * > * > *::before {
-  position: absolute;
-  bottom: -20px;
-  left: 0px;
-
-}
-
-body > * > * > * > * > *::before {
-  top: 0;
-  left: 0;
-}
-
 body > * {
   background: rgba(0, 128, 0, 0.2);
   box-shadow: 0 0 0 3px green;
@@ -99,21 +69,46 @@ body > * > * > * > * > *::before {
 }
 
 .main-header::before {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   content: ".main-header";
 }
 
-.container::before {
-  content: ".container";
-}
-
-
 .main-navigation::before {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 content: ".main-navigation";
+
 }
 
 .main-navigation-wrapper::before {
+position: absolute;
+  left: 0px;
   content: ".main-navigation-wrapper";
 }
+
+.main-navigation-wrapper .container::before {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  content: ".container";
+}
+
+.main-footer .container::before {
+  position: absolute;
+  top: -25px;
+  left: -3px;
+  content: ".container";
+}
+.container::before {
+  position: absolute;
+  top: -25px;
+  left: -3px;
+  content: ".container";
+}
+
 
 .site-navigation::before {
   content: ".site-navigation";
@@ -128,8 +123,10 @@ content: ".main-navigation";
 }
 
 .features-list::before {
+  position: absolute;
   content: ".features-list";
-  top: -28px;
+  top: 5px;
+  left: 2px;
 }
 
 .feature-item::before {
@@ -137,6 +134,9 @@ content: ".main-navigation";
 }
 
 .index-columns::before {
+  position: absolute;
+top: 0;
+  left: 0;
   content: ".index-columns";
 }
 
@@ -152,16 +152,27 @@ content: ".main-navigation";
   right: 0;
 }
 
-.main-footer::before {
-  content: ".main-footer";
+.contacts::before {
+  content: ".contacts";
+  left: auto;
+  right: 0;
+}
+.appointment::before {
+  content: ".appointment";
+  left: auto;
+  right: 0;
 }
 
-.main-footer .container::before {
-  top: -28px;
+.main-footer::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: ".main-footer";
 }
 
 .footer-contacts::before {
   content: ".footer-contacts";
+
 }
 
 .footer-social::before {
@@ -211,4 +222,3 @@ content: ".main-navigation";
 .product-info::before {
   content: ".product-info";
 }
-
