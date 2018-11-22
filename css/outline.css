@@ -83,6 +83,14 @@ content: ".main-navigation";
 
 }
 
+.inner-page .main-navigation::before {
+
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  content: ".main-navigation";
+}
+
 .main-navigation-wrapper::before {
 position: absolute;
   left: 0px;
@@ -121,6 +129,14 @@ position: absolute;
 .main-header-logo::before {
   content: ".main-header-logo";
 }
+
+.inner-page .main-header-logo::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: ".main-header-logo";
+}
+
 
 .features-list::before {
   position: absolute;
@@ -187,7 +203,25 @@ top: 0;
   content: ".page-title";
 }
 
+.inner-page .page-title::before {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  position: absolute;
+  top: -0px;
+  left: 0px;
+  content: ".page-title";
+}
+
 .breadcrumbs::before {
+  content: ".breadcrumbs";
+}
+
+.inner-page .breadcrumbs::before {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
   content: ".breadcrumbs";
 }
 
@@ -199,7 +233,21 @@ top: 0;
   content: ".catalog";
 }
 
+.inner-page .catalog::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: ".catalog";
+}
+
 .catalog-columns::before {
+  content: ".catalog-columns";
+}
+
+.inner-page .catalog-columns::before {
+  position: absolute;
+  top: -25px;
+  left: 0px;
   content: ".catalog-columns";
 }
 
@@ -207,9 +255,25 @@ top: 0;
   content: ".catalog-list";
 }
 
+.inner-page .catalog-list::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: ".catalog-list";
+}
+
+
 .catalog-item::before {
   content: ".catalog-item";
 }
+
+.inner-page .catalog-item::before {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  content: ".catalog-item";
+}
+
 
 .pagination-list::before {
   content: ".pagination-list";
